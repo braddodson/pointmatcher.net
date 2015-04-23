@@ -2,7 +2,7 @@ Pointmatcher.net
 ================
 
 pointmatcher.net is a modular Iterative Closest Point library for .net inspired by
-[libpointmatcher](https://github.com/ethz-asl/libpointmatcher) and [libnabo]((https://github.com/ethz-asl/libnabo)
+[libpointmatcher](https://github.com/ethz-asl/libpointmatcher) and [libnabo](https://github.com/ethz-asl/libnabo)
 
 pointmatcher.net can take a point cloud and iteratively find a Euclidean transformation that will align it with a reference point cloud.
 
