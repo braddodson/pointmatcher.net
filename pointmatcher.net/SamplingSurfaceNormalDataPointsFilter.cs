@@ -93,9 +93,9 @@ namespace pointmatcher.net
 	        int leftCount = count - rightCount;
 	        Debug.Assert(last - rightCount == first + leftCount);
 
-	        // sort, hack std::nth_element
+	        // select the cut point and partition the indices around it
             var pts = data.points;
-            QuickSelect.Select(data.indices, first, last - 1, first + leftCount, i => GetAt(data.points[data.indices[i]].point, cutDim));
+            QuickSelect.Select(data.indices, first, last - 1, first + leftCount, i => GetAt(data.points[i].point, cutDim));
 
 	        // get value
 	        int cutIndex = data.indices[first+leftCount];
