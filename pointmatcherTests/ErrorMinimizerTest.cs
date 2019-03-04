@@ -49,7 +49,7 @@ namespace pointmatcherTests
             var dataPoints = new DataPoints
             {
                 points = points.ToArray(),
-                contiansNormals = true,
+                containsNormals = true,
             };
 
             t = new EuclideanTransform();

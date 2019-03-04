@@ -15,7 +15,7 @@ namespace pointmatcher.net
     {
         public EuclideanTransform SolveForTransform(ErrorElements mPts)
         {
-            if (!mPts.reference.contiansNormals)
+            if (!mPts.reference.containsNormals)
             {
                 throw new ArgumentException("Reference points must have computed normals. Use appropriate input filter.");
             }
@@ -140,12 +140,12 @@ namespace pointmatcher.net
                 reading = new DataPoints
                 {
                     points = keptPoints.ToArray(),
-                    contiansNormals = requestedPts.contiansNormals,
+                    containsNormals = requestedPts.containsNormals,
                 },
                 reference = new DataPoints
                 {
                     points = matchedPoints.ToArray(),
-                    contiansNormals = sourcePts.contiansNormals,
+                    containsNormals = sourcePts.containsNormals,
                 },
                 weights = keptWeights.ToArray(),
             };
