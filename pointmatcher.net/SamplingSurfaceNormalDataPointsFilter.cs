@@ -63,7 +63,7 @@ namespace pointmatcher.net
             return new DataPoints
             {
                 points = buildData.pointsToKeep.ToArray(),
-                contiansNormals = true
+                containsNormals = true
             };
         }
 

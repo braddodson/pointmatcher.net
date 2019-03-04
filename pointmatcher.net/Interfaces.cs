@@ -19,7 +19,7 @@ namespace pointmatcher.net
     public class DataPoints
     {
         public DataPoint[] points;
-        public bool contiansNormals;
+        public bool containsNormals;
     }
 
     public class Matches

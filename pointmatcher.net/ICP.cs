@@ -153,7 +153,7 @@ namespace pointmatcher.net
             return new DataPoints
             {
                 points = resultPoints,
-                contiansNormals = points.contiansNormals
+                containsNormals = points.containsNormals
             };
         }
     }
